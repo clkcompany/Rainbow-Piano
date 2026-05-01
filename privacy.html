@@ -1,48 +1,280 @@
- Privacy Policy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Rainbow Piano</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  Rainbow Piano – Privacy Policy
-  Last updated: May 1, 2025
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0a1a;
+      color: #e0e0f0;
+      min-height: 100vh;
+    }
 
-  1. Overview
-  Rainbow Piano ("the App") is a music education app designed for children
-  and families. We are committed to protecting your privacy.
+    .hero {
+      background: linear-gradient(135deg, #1a0a2e 0%, #2d0b5e 50%, #1a0a2e 100%);
+      padding: 60px 24px 48px;
+      text-align: center;
+      border-bottom: 1px solid rgba(102, 126, 234, 0.2);
+    }
 
-  2. Information We Collect
-  We do NOT collect any personal information.
-  We do NOT require account registration.
-  We do NOT track your location.
-  We do NOT use advertising networks.
-  We do NOT share data with third parties.
+    .logo {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
 
-  All progress data (stars, scores, practice streaks) is stored
-  locally on your device only and never transmitted anywhere.
+    .app-name {
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #a78bfa, #818cf8, #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
 
-  3. In-App Purchases
-  The App offers a one-time "Pro" upgrade via Google Play / Apple App Store
-  billing. We do not process or store any payment information —
-  all billing is handled entirely by Google or Apple.
+    .page-title {
+      font-size: 16px;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
 
-  4. Notifications
-  The App may send local practice reminder notifications.
-  These are generated on your device only.
-  You can disable them at any time in your device settings.
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
 
-  5. Children's Privacy (COPPA)
-  Rainbow Piano is designed for children aged 3 and above.
-  We do not knowingly collect personal information from children under 13.
-  Since we collect no data at all, the app is fully COPPA compliant.
+    .updated {
+      display: inline-block;
+      background: rgba(102, 126, 234, 0.12);
+      border: 1px solid rgba(102, 126, 234, 0.25);
+      color: #818cf8;
+      font-size: 13px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 40px;
+    }
 
-  6. Third-Party Services
-  The App does not integrate any third-party analytics,
-  advertising SDKs, or tracking tools.
+    .badge-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
 
-  7. Data Security
-  Since no personal data is collected or transmitted,
-  there is no data at risk.
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 10px 16px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+    }
 
-  8. Changes to This Policy
-  If we update this policy, the new version will be posted
-  at the same URL with an updated date.
+    .badge span.icon { font-size: 16px; }
 
-  9. Contact
-  For privacy questions:tech@clk.company
+    .section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 20px;
+      background: linear-gradient(to bottom, #a78bfa, #60a5fa);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.8;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.8;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #6BCB77;
+      font-weight: 700;
+    }
+
+    .highlight-box {
+      background: rgba(107, 203, 119, 0.07);
+      border: 1px solid rgba(107, 203, 119, 0.2);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-top: 14px;
+    }
+
+    .highlight-box p { color: rgba(255,255,255,0.65); }
+
+    .divider {
+      height: 1px;
+      background: rgba(255,255,255,0.06);
+      margin: 40px 0;
+    }
+
+    .contact-box {
+      background: linear-gradient(135deg, rgba(102,126,234,0.1), rgba(155,89,182,0.1));
+      border: 1px solid rgba(102,126,234,0.2);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .contact-box p { margin-bottom: 12px; }
+
+    .contact-box a {
+      color: #818cf8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      color: rgba(255,255,255,0.2);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: rgba(255,255,255,0.35);
+      text-decoration: none;
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="logo">🎹</div>
+    <div class="app-name">Rainbow Piano</div>
+    <div class="page-title">Privacy Policy</div>
+  </div>
+
+  <div class="container">
+
+    <div class="updated">Last updated: May 1, 2025</div>
+
+    <div class="badge-row">
+      <div class="badge"><span class="icon">🚫</span> No data collected</div>
+      <div class="badge"><span class="icon">👶</span> COPPA compliant</div>
+      <div class="badge"><span class="icon">📵</span> No ads</div>
+      <div class="badge"><span class="icon">🔒</span> Local storage only</div>
+    </div>
+
+    <div class="section">
+      <h2>Overview</h2>
+      <p>Rainbow Piano is a music education app designed for children and families. We are fully committed to protecting your privacy. This policy explains what information we handle and how.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>Information We Collect</h2>
+      <div class="highlight-box">
+        <ul>
+          <li>We do NOT collect any personal information</li>
+          <li>We do NOT require account registration</li>
+          <li>We do NOT track your location</li>
+          <li>We do NOT use advertising networks</li>
+          <li>We do NOT share any data with third parties</li>
+        </ul>
+      </div>
+      <p style="margin-top:14px;">All progress data (stars, scores, practice streaks) is stored locally on your device only and is never transmitted anywhere.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>In-App Purchases</h2>
+      <p>The App offers a one-time "Pro" upgrade via Google Play or Apple App Store billing. We do not process or store any payment information — all billing is handled entirely by Google or Apple under their own privacy policies.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>Notifications</h2>
+      <p>The App may send local practice reminder notifications. These are generated entirely on your device — no data is sent to any server. You can disable notifications at any time in your device settings.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>Children's Privacy (COPPA)</h2>
+      <p>Rainbow Piano is designed for children aged 3 and above. We do not knowingly collect personal information from children under 13. Since we collect absolutely no data, the App is fully compliant with the Children's Online Privacy Protection Act (COPPA).</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>Third-Party Services</h2>
+      <p>The App does not integrate any third-party analytics, advertising SDKs, crash reporting tools, or tracking libraries. What happens on your device stays on your device.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>Data Security</h2>
+      <p>Since no personal data is collected or transmitted, there is no personal data at risk. App preferences and progress are stored using the standard secure local storage provided by your operating system.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>Changes to This Policy</h2>
+      <p>If we update this Privacy Policy, the new version will be posted at this URL with an updated date. We encourage you to review it periodically.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="contact-box">
+      <p>Questions about this Privacy Policy?</p>
+      <a href="mailto:t4devops@hotmail.com">t4devops@hotmail.com</a>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Rainbow Piano &nbsp;·&nbsp;
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </footer>
+
+</body>
+</html>
